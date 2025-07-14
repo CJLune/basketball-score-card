@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'cursed-timer';
+    src: url('cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure body takes full viewport height for centering */
+    margin: 0; /* Remove default body margin */
+    background-color: #333; /* Added a background for better visualization */
+    font-family: 'cursed-timer', Verdana, sans-serif; /* Corrected font-stack */
+}
+
+.box {
+    border: 2px black solid;
+    border-radius: 8px;
+    width: 400px;
+    height: auto;
+    margin: 16px;
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 20px; /* Space between sections */
+    background-color: #0C4A6E;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 1.5px 4px 0 rgba(12, 74, 110, 0.25);
+}
+
+.scoreboard-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* margin-bottom: 20px; */ /* Gap property on .box handles this now */
+}
+
+.little-boxes-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.home,
+.guest {
+    width: 155px;
+    height: 120px;
+    border: 2px black solid;
+    text-align: center;
+    position: relative;
+    background-color: #080001;
+    border-radius: 5px;
+    display: flex; /* Make score container a flexbox */
+    align-items: center; /* Vertically center the score */
+    justify-content: center; /* Horizontally center the score */
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 14px;
+    color: #F3F4F6; /* Adjusted color for better contrast */
+    font-family: 'Verdana', sans-serif; /* Added generic font family */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'cursed-timer', monospace; /* Added generic font family */
+    font-weight: 400;
+    color: #A60808;
+    font-size: 100px;
+    margin: 0; /* Reset margin as it's now centered by flexbox */
+    padding-top: 1rem;
+}
+
+.lil-homeboxes,
+.lil-guestboxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 155px; /* Set a specific width to align with scoreboards */
+    margin-top: 10px; /* Space between the big box and little boxes */
+}
+
+.lil-box1,
+.lil-box2,
+.lil-box3 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #9AABD8;
+    background-color: #9AABD8; /* Added background for visibility */
+    cursor: pointer;
+}
+
+button {
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: 'cursed-timer';
+    padding-top: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; /* Optional: set a height for better centering */
+}

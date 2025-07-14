@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Score Card</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="box">
+        <div class="scoreboard-section">
+            <div id="home-container">
+                <h1>Home</h1>
+                <div class="home">
+                    <h2 id="home-score-display">0</h2>
+                </div>
+            </div>
+            <div id="guest-container">
+                <h1>Guest</h1>
+                <div class="guest">
+                    <h2 id="guest-score-display">0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="little-boxes-section">
+            <div class="lil-homeboxes">
+       
+                <button class="lil-box1" onclick="changeScore('home', 1)">+1</button>
+                <button class="lil-box2" onclick="changeScore('home', 2)">+2</button>
+                <button class="lil-box3" onclick="changeScore('home', 3)">+3</button>
+            </div>
+            <div class="lil-guestboxes">
+               
+                <button class="lil-box1" onclick="changeScore('guest', 1)">+1</button>
+                <button class="lil-box2" onclick="changeScore('guest', 2)">+2</button>
+                <button class="lil-box3" onclick="changeScore('guest', 3)">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
